@@ -6,7 +6,9 @@ import pandas as pd
 import pickle
 import warnings
 warnings.filterwarnings('ignore')
-
+password_guess = st.text_input("What is the Password?")
+if password_guess != st.secrets["password"]:
+   st.stop()
 
 # Set up the app title and image
 st.title('Graduate Admission Predictor 🌟')
@@ -98,6 +100,3 @@ with tab4:
     st.caption("Range of predictions with confidence intervals.")
 
 
-password_guess = st.text_input("What is the Password?")
-if password_guess != st.secrets["password"]:
-   st.stop()

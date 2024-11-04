@@ -96,4 +96,3 @@ with tab4:
     st.write("### Coverage Plot")
     st.image('coverage.svg')
     st.caption("Range of predictions with confidence intervals.")
-
